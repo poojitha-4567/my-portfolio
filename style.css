@@ -1,0 +1,163 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #111827;
+  color: #f8fafc;
+  line-height: 1.7;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background: #0f172a;
+  box-shadow: 0 3px 15px #0005;
+}
+
+.logo {
+  color: #818cf8;
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a {
+  color: #e2e8f0;
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #818cf8;
+}
+
+.hero {
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #111827, #1e293b);
+}
+
+.intro {
+  color: #a5b4fc;
+  font-size: 22px;
+}
+
+.hero h1 {
+  font-size: clamp(30px, 5vw, 58px);
+  margin: 15px 0;
+  background: linear-gradient(90deg, #818cf8, #c084fc);
+  background-clip: text;
+  color: transparent;
+}
+
+.hero h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  color: #cbd5e1;
+  margin-bottom: 15px;
+}
+
+.btn {
+  display: inline-block;
+  margin: 15px 8px;
+  padding: 12px 28px;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #6366f1, #9333ea);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn.outline {
+  background: transparent;
+  border: 2px solid #818cf8;
+}
+
+section:not(.hero) {
+  padding: 65px 10%;
+}
+
+section h2 {
+  color: #a5b4fc;
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+
+section p {
+  color: #cbd5e1;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 15px;
+}
+
+.cards div, .project {
+  background: #1e293b;
+  padding: 22px;
+  border-radius: 12px;
+  border: 1px solid #334155;
+}
+
+.cards div {
+  text-align: center;
+  color: #c4b5fd;
+  font-weight: bold;
+}
+
+.project {
+  margin-bottom: 18px;
+}
+
+.project h3 {
+  color: #c4b5fd;
+  margin-bottom: 8px;
+}
+
+.project a, #contact a {
+  color: #818cf8;
+}
+
+footer {
+  text-align: center;
+  padding: 22px;
+  background: #0f172a;
+  color: #94a3b8;
+}
+
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav a {
+    margin: 0 7px;
+    font-size: 13px;
+  }
+
+  .hero h2 {
+    font-size: 24px;
+  }
+}
